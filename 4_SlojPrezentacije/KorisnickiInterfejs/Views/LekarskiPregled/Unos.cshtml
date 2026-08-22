@@ -1,0 +1,81 @@
+@model KorisnickiInterfejs.Models.LekarskiPregledViewModel
+@{
+    ViewBag.Title = "Novi lekarski pregled";
+}
+
+<h2>Novi lekarski pregled</h2>
+<hr />
+
+@using (Html.BeginForm("Unos", "LekarskiPregled", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(false, "", new { @class = "alert alert-danger" })
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="mb-3">
+                @Html.LabelFor(m => m.KandidatID, new { @class = "form-label fw-bold" })
+                @Html.DropDownListFor(m => m.KandidatID, Model.KandidatiSeznam, "-- Odaberite kandidata --", new { @class = "form-select" })
+                @Html.ValidationMessageFor(m => m.KandidatID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="mb-3">
+                @Html.LabelFor(m => m.DatumPregleda, new { @class = "form-label fw-bold" })
+                @Html.TextBoxFor(m => m.DatumPregleda, "{0:yyyy-MM-ddTHH:mm}", new { @class = "form-control", type = "datetime-local" })
+                @Html.ValidationMessageFor(m => m.DatumPregleda, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="mb-3">
+                @Html.LabelFor(m => m.ZdravstvenaUstanova, new { @class = "form-label fw-bold" })
+                @Html.TextBoxFor(m => m.ZdravstvenaUstanova, new { @class = "form-control", placeholder = "Npr. Dom zdravlja Novo Sarajevo" })
+                @Html.ValidationMessageFor(m => m.ZdravstvenaUstanova, "", new { @class = "text-danger" })
+            </div>
+            <div class="mb-3">
+                @Html.LabelFor(m => m.AdresaUstanove, new { @class = "form-label fw-bold" })
+                @Html.TextBoxFor(m => m.AdresaUstanove, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.AdresaUstanove, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="mb-3">
+                @Html.LabelFor(m => m.TrajanjePregledaMinuta, new { @class = "form-label fw-bold" })
+                @Html.TextBoxFor(m => m.TrajanjePregledaMinuta, new { @class = "form-control", type = "number", min = "5", max = "180" })
+                @Html.ValidationMessageFor(m => m.TrajanjePregledaMinuta, "", new { @class = "text-danger" })
+            </div>
+            <div class="mb-3">
+                @Html.LabelFor(m => m.BrojLekaraUKomisiji, new { @class = "form-label fw-bold" })
+                @Html.TextBoxFor(m => m.BrojLekaraUKomisiji, new { @class = "form-control", type = "number", min = "1", max = "10" })
+                @Html.ValidationMessageFor(m => m.BrojLekaraUKomisiji, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="mb-3 form-check">
+                @Html.CheckBoxFor(m => m.Zavrsen, new { @class = "form-check-input" })
+                @Html.LabelFor(m => m.Zavrsen, new { @class = "form-check-label" })
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="mb-3">
+                @Html.LabelFor(m => m.Napomena, new { @class = "form-label" })
+                @Html.TextAreaFor(m => m.Napomena, new { @class = "form-control", rows = "2" })
+                @Html.ValidationMessageFor(m => m.Napomena, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert-info">
+        Nakon cuvanja pregleda, dodajte prilozene nalaze dodatnih specijalistickih pregleda
+        (ako ih obrazovni profil kandidata zahtijeva) na stranici <strong>Prilozeni nalazi</strong>.
+    </div>
+
+    <button type="submit" class="btn btn-primary">Sacuvaj pregled</button>
+    <a href="@Url.Action("Index")" class="btn btn-secondary ms-2">Odustani</a>
+}

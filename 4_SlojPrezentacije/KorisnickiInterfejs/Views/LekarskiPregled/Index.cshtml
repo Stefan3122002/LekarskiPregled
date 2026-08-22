@@ -1,0 +1,85 @@
+@model IEnumerable<KlasePodataka.Entiteti.LekarskiPregledKlasa>
+@{
+    ViewBag.Title = "Lekarski pregledi";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Evidencija lekarskih pregleda</h2>
+    <div>
+        <a href="@Url.Action("Unos")" class="btn btn-primary">+ Novi pregled</a>
+        <a href="@Url.Action("StampaParametarska")" class="btn btn-warning">Parametarska stampa</a>
+    </div>
+</div>
+
+@using (Html.BeginForm("Index", "LekarskiPregled", FormMethod.Get, new { @class = "mb-3" }))
+{
+    <div class="input-group" style="max-width:480px">
+        <input type="text" name="filter" value="@ViewBag.Filter" class="form-control"
+               placeholder="Pretraga po kandidatu ili ustanovi..." />
+        <button class="btn btn-outline-secondary" type="submit">Trazi</button>
+        @if (!string.IsNullOrEmpty(ViewBag.Filter as string))
+        {
+            <a href="@Url.Action("Index")" class="btn btn-outline-danger">Ponisti</a>
+        }
+    </div>
+}
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover table-bordered">
+        <thead class="table-primary">
+            <tr>
+                <th>ID</th>
+                <th>Kandidat</th>
+                <th>Obrazovni profil</th>
+                <th>Datum pregleda</th>
+                <th>Ustanova</th>
+                <th>Trajanje (min)</th>
+                <th>Ljekara u komisiji</th>
+                <th>Status</th>
+                <th>Akcije</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr><td colspan="9" class="text-center text-muted">Nema unesenih pregleda.</td></tr>
+            }
+            @foreach (var p in Model)
+            {
+                <tr>
+                    <td>@p.PregledID</td>
+                    <td><strong>@(p.Kandidat?.ImePrezime ?? "-")</strong></td>
+                    <td>@(p.Kandidat?.Profil?.Naziv ?? "-")</td>
+                    <td>@p.DatumPregleda.ToString("dd.MM.yyyy HH:mm")</td>
+                    <td>@p.ZdravstvenaUstanova</td>
+                    <td>@p.TrajanjePregledaMinuta</td>
+                    <td>@p.BrojLekaraUKomisiji</td>
+                    <td>
+                        @if (p.Zavrsen)
+                        {
+                            <span class="badge bg-success">Zavrsen</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">U toku</span>
+                        }
+                    </td>
+                    <td>
+                        <a href="@Url.Action("Izmena", new { id = p.PregledID })"
+                           class="btn btn-warning btn-sm">Izmijeni</a>
+                        <a href="@Url.Action("Stampa", new { id = p.PregledID })"
+                           class="btn btn-info btn-sm">Uvjerenje</a>
+                        @using (Html.BeginForm("Brisanje", "LekarskiPregled", new { id = p.PregledID }, FormMethod.Post, new { style = "display:inline" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn btn-danger btn-sm"
+                                    onclick="return confirm('Brisanje ce ukloniti i sve prilozene nalaze. Nastaviti?')">
+                                Obrisi
+                            </button>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

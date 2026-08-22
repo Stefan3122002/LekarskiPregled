@@ -1,0 +1,84 @@
+@model IEnumerable<KlasePodataka.Entiteti.KandidatKlasa>
+@{
+    ViewBag.Title = "Kandidati";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Evidencija kandidata</h2>
+    <a href="@Url.Action("Unos")" class="btn btn-primary">+ Dodaj kandidata</a>
+</div>
+
+@using (Html.BeginForm("Index", "Kandidat", FormMethod.Get, new { @class = "mb-3" }))
+{
+    <div class="input-group" style="max-width:450px">
+        <input type="text" name="filter" value="@ViewBag.Filter" class="form-control"
+               placeholder="Pretraga po imenu, prezimenu ili JMBG..." />
+        <button class="btn btn-outline-secondary" type="submit">Trazi</button>
+        @if (!string.IsNullOrEmpty(ViewBag.Filter as string))
+        {
+            <a href="@Url.Action("Index")" class="btn btn-outline-danger">Ponisti</a>
+        }
+    </div>
+}
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover table-bordered">
+        <thead class="table-primary">
+            <tr>
+                <th>ID</th>
+                <th>Ime i prezime</th>
+                <th>JMBG</th>
+                <th>Datum rodjenja</th>
+                <th>Starost</th>
+                <th>Srednja skola</th>
+                <th>Obrazovni profil</th>
+                <th>Vrsta upisa</th>
+                <th>Status</th>
+                <th>Akcije</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr><td colspan="10" class="text-center text-muted">Nema unesenih kandidata.</td></tr>
+            }
+            @foreach (var k in Model)
+            {
+                <tr>
+                    <td>@k.KandidatID</td>
+                    <td><strong>@k.ImePrezime</strong></td>
+                    <td>@k.JMBG</td>
+                    <td>@k.DatumRodjenja.ToString("dd.MM.yyyy")</td>
+                    <td>@k.Starost</td>
+                    <td>@(k.Skola?.Naziv ?? "-")</td>
+                    <td>@(k.Profil?.Naziv ?? "-") <span class="text-muted">(@(k.Profil?.Sifra))</span></td>
+                    <td>@k.VrstaUpisa</td>
+                    <td>
+                        @if (k.Aktivan)
+                        {
+                            <span class="badge bg-success">Aktivna</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">Povucena</span>
+                        }
+                    </td>
+                    <td>
+                        <a href="@Url.Action("Izmena", new { id = k.KandidatID })"
+                           class="btn btn-warning btn-sm">Izmijeni</a>
+                        <a href="@Url.Action("Unos", "LekarskiPregled")"
+                           class="btn btn-info btn-sm">Novi pregled</a>
+                        @using (Html.BeginForm("Brisanje", "Kandidat", new { id = k.KandidatID }, FormMethod.Post, new { style = "display:inline" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn btn-danger btn-sm"
+                                    onclick="return confirm('Brisanje kandidata ce ukloniti i sve njegove preglede. Nastaviti?')">
+                                Obrisi
+                            </button>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

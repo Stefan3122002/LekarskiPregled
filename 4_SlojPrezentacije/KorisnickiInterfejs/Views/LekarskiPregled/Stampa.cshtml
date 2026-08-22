@@ -1,0 +1,121 @@
+@model KlasePodataka.Entiteti.LekarskiPregledKlasa
+@{
+    ViewBag.Title = "Ljekarsko uvjerenje";
+    bool validno = ViewBag.UvjerenjeValidno;
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Ljekarsko uvjerenje - pregled #@Model.PregledID</h2>
+    <div>
+        <a href="@Url.Action("Index")" class="btn btn-secondary">Nazad</a>
+        <button onclick="window.print()" class="btn btn-primary">&#128438; Stampaj</button>
+    </div>
+</div>
+
+@if (validno)
+{
+    <div class="alert alert-success">
+        <strong>&#9989; UVJERENJE VALJANO.</strong>
+        Prilozeni su svi nalazi dodatnih specijalistickih pregleda propisani za obrazovni profil kandidata (ako ih profil zahtijeva).
+    </div>
+}
+else
+{
+    <div class="alert alert-danger">
+        <strong>&#10060; UVJERENJE NIJE VALJANO.</strong> @ViewBag.PorukaValidnosti
+    </div>
+}
+
+<div class="card mb-4">
+    <div class="card-header bg-primary text-white">
+        <h5 class="mb-0">@(Model.Kandidat?.ImePrezime ?? "-")</h5>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <dl class="row">
+                    <dt class="col-sm-5">JMBG:</dt>
+                    <dd class="col-sm-7">@(Model.Kandidat?.JMBG ?? "-")</dd>
+
+                    <dt class="col-sm-5">Srednja skola:</dt>
+                    <dd class="col-sm-7">@(Model.Kandidat?.Skola?.Naziv ?? "-")</dd>
+
+                    <dt class="col-sm-5">Obrazovni profil:</dt>
+                    <dd class="col-sm-7">
+                        @(Model.Kandidat?.Profil?.Naziv ?? "-")
+                        <span class="text-muted">(sifra @(Model.Kandidat?.Profil?.Sifra))</span>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-md-6">
+                <dl class="row">
+                    <dt class="col-sm-5">Zdravstvena ustanova:</dt>
+                    <dd class="col-sm-7">@Model.ZdravstvenaUstanova, @Model.AdresaUstanove</dd>
+
+                    <dt class="col-sm-5">Datum pregleda:</dt>
+                    <dd class="col-sm-7">@Model.DatumPregleda.ToString("dd.MM.yyyy HH:mm")</dd>
+
+                    <dt class="col-sm-5">Komisija:</dt>
+                    <dd class="col-sm-7">@Model.BrojLekaraUKomisiji ljekara, @Model.TrajanjePregledaMinuta min</dd>
+
+                    <dt class="col-sm-5">Status pregleda:</dt>
+                    <dd class="col-sm-7">
+                        @if (Model.Zavrsen)
+                        {
+                            <span class="badge bg-success">Zavrsen</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">U toku</span>
+                        }
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        @if (!string.IsNullOrEmpty(Model.Napomena))
+        {
+            <hr />
+            <p><strong>Napomena:</strong> @Model.Napomena</p>
+        }
+    </div>
+</div>
+
+<h4>Prilozeni nalazi dodatnih specijalistickih pregleda</h4>
+<table class="table table-striped table-bordered">
+    <thead class="table-secondary">
+        <tr>
+            <th>Vrsta nalaza</th>
+            <th>Datum nalaza</th>
+            <th>Ustanova</th>
+            <th>Uredan</th>
+            <th>Napomena</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.PrilozeniNalazi == null || !Model.PrilozeniNalazi.Any())
+        {
+            <tr><td colspan="5" class="text-center text-muted">Nema prilozenih nalaza.</td></tr>
+        }
+        @foreach (var n in Model.PrilozeniNalazi ?? new List<KlasePodataka.Entiteti.PrilozeniNalazKlasa>())
+        {
+            <tr>
+                <td>@n.VrstaNalaza</td>
+                <td>@n.DatumNalaza.ToString("dd.MM.yyyy")</td>
+                <td>@n.Ustanova</td>
+                <td>
+                    @if (n.Uredan)
+                    {
+                        <span class="badge bg-success">DA</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger">NE</span>
+                    }
+                </td>
+                <td>@(n.Napomena ?? "-")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Unos", "PrilozeniNalaz", new { pregledId = Model.PregledID })" class="btn btn-info">+ Dodaj nalaz za ovaj pregled</a>
