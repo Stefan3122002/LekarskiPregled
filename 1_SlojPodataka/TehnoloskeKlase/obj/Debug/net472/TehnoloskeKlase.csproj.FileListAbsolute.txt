@@ -1,9 +1,0 @@
-C:\Users\Milos\Desktop\rvs\LekarskiPregled\1_SlojPodataka\TehnoloskeKlase\bin\Debug\net472\TehnoloskeKlase.dll
-C:\Users\Milos\Desktop\rvs\LekarskiPregled\1_SlojPodataka\TehnoloskeKlase\bin\Debug\net472\TehnoloskeKlase.pdb
-C:\Users\Milos\Desktop\rvs\LekarskiPregled\1_SlojPodataka\TehnoloskeKlase\obj\Debug\net472\TehnoloskeKlase.csproj.AssemblyReference.cache
-C:\Users\Milos\Desktop\rvs\LekarskiPregled\1_SlojPodataka\TehnoloskeKlase\obj\Debug\net472\TehnoloskeKlase.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Milos\Desktop\rvs\LekarskiPregled\1_SlojPodataka\TehnoloskeKlase\obj\Debug\net472\TehnoloskeKlase.AssemblyInfoInputs.cache
-C:\Users\Milos\Desktop\rvs\LekarskiPregled\1_SlojPodataka\TehnoloskeKlase\obj\Debug\net472\TehnoloskeKlase.AssemblyInfo.cs
-C:\Users\Milos\Desktop\rvs\LekarskiPregled\1_SlojPodataka\TehnoloskeKlase\obj\Debug\net472\TehnoloskeKlase.csproj.CoreCompileInputs.cache
-C:\Users\Milos\Desktop\rvs\LekarskiPregled\1_SlojPodataka\TehnoloskeKlase\obj\Debug\net472\TehnoloskeKlase.dll
-C:\Users\Milos\Desktop\rvs\LekarskiPregled\1_SlojPodataka\TehnoloskeKlase\obj\Debug\net472\TehnoloskeKlase.pdb
