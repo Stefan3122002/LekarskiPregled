@@ -1,0 +1,175 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\User\\Desktop\\LekarskiPregled (1)\\LekarskiPregled\\2_SlojPoslovneLogike\\PoslovnaLogika\\PoslovnaLogika.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\User\\Desktop\\LekarskiPregled (1)\\LekarskiPregled\\1_SlojPodataka\\KlasePodataka\\KlasePodataka.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\LekarskiPregled (1)\\LekarskiPregled\\1_SlojPodataka\\KlasePodataka\\KlasePodataka.csproj",
+        "projectName": "KlasePodataka",
+        "projectPath": "C:\\Users\\User\\Desktop\\LekarskiPregled (1)\\LekarskiPregled\\1_SlojPodataka\\KlasePodataka\\KlasePodataka.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\LekarskiPregled (1)\\LekarskiPregled\\1_SlojPodataka\\KlasePodataka\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\LekarskiPregled (1)\\LekarskiPregled\\1_SlojPodataka\\TehnoloskeKlase\\TehnoloskeKlase.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\LekarskiPregled (1)\\LekarskiPregled\\1_SlojPodataka\\TehnoloskeKlase\\TehnoloskeKlase.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\LekarskiPregled (1)\\LekarskiPregled\\1_SlojPodataka\\TehnoloskeKlase\\TehnoloskeKlase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\LekarskiPregled (1)\\LekarskiPregled\\1_SlojPodataka\\TehnoloskeKlase\\TehnoloskeKlase.csproj",
+        "projectName": "TehnoloskeKlase",
+        "projectPath": "C:\\Users\\User\\Desktop\\LekarskiPregled (1)\\LekarskiPregled\\1_SlojPodataka\\TehnoloskeKlase\\TehnoloskeKlase.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\LekarskiPregled (1)\\LekarskiPregled\\1_SlojPodataka\\TehnoloskeKlase\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\User\\Desktop\\LekarskiPregled (1)\\LekarskiPregled\\2_SlojPoslovneLogike\\PoslovnaLogika\\PoslovnaLogika.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\LekarskiPregled (1)\\LekarskiPregled\\2_SlojPoslovneLogike\\PoslovnaLogika\\PoslovnaLogika.csproj",
+        "projectName": "PoslovnaLogika",
+        "projectPath": "C:\\Users\\User\\Desktop\\LekarskiPregled (1)\\LekarskiPregled\\2_SlojPoslovneLogike\\PoslovnaLogika\\PoslovnaLogika.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\LekarskiPregled (1)\\LekarskiPregled\\2_SlojPoslovneLogike\\PoslovnaLogika\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\LekarskiPregled (1)\\LekarskiPregled\\1_SlojPodataka\\KlasePodataka\\KlasePodataka.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\LekarskiPregled (1)\\LekarskiPregled\\1_SlojPodataka\\KlasePodataka\\KlasePodataka.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+C:\Users\Milos\Desktop\rvs\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\bin\Debug\net472\PoslovnaLogika.dll
+C:\Users\Milos\Desktop\rvs\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\bin\Debug\net472\PoslovnaLogika.pdb
+C:\Users\Milos\Desktop\rvs\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\bin\Debug\net472\EntityFramework.SqlServer.dll
+C:\Users\Milos\Desktop\rvs\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\bin\Debug\net472\EntityFramework.dll
+C:\Users\Milos\Desktop\rvs\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\bin\Debug\net472\Newtonsoft.Json.dll
+C:\Users\Milos\Desktop\rvs\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\bin\Debug\net472\KlasePodataka.dll
+C:\Users\Milos\Desktop\rvs\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\bin\Debug\net472\TehnoloskeKlase.dll
+C:\Users\Milos\Desktop\rvs\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\bin\Debug\net472\KlasePodataka.pdb
+C:\Users\Milos\Desktop\rvs\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\bin\Debug\net472\TehnoloskeKlase.pdb
+C:\Users\Milos\Desktop\rvs\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\obj\Debug\net472\PoslovnaLogika.csproj.AssemblyReference.cache
+C:\Users\Milos\Desktop\rvs\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\obj\Debug\net472\PoslovnaLogika.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Milos\Desktop\rvs\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\obj\Debug\net472\PoslovnaLogika.AssemblyInfoInputs.cache
+C:\Users\Milos\Desktop\rvs\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\obj\Debug\net472\PoslovnaLogika.AssemblyInfo.cs
+C:\Users\Milos\Desktop\rvs\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\obj\Debug\net472\PoslovnaLogika.csproj.CoreCompileInputs.cache
+C:\Users\Milos\Desktop\rvs\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\obj\Debug\net472\Poslovna.5AADE7AF.Up2Date
+C:\Users\Milos\Desktop\rvs\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\obj\Debug\net472\PoslovnaLogika.dll
+C:\Users\Milos\Desktop\rvs\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\obj\Debug\net472\PoslovnaLogika.pdb
+C:\Users\User\Desktop\LekarskiPregled (1)\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\bin\Debug\net472\PoslovnaLogika.dll
+C:\Users\User\Desktop\LekarskiPregled (1)\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\bin\Debug\net472\PoslovnaLogika.pdb
+C:\Users\User\Desktop\LekarskiPregled (1)\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\bin\Debug\net472\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\LekarskiPregled (1)\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\bin\Debug\net472\EntityFramework.dll
+C:\Users\User\Desktop\LekarskiPregled (1)\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\bin\Debug\net472\Newtonsoft.Json.dll
+C:\Users\User\Desktop\LekarskiPregled (1)\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\bin\Debug\net472\KlasePodataka.dll
+C:\Users\User\Desktop\LekarskiPregled (1)\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\bin\Debug\net472\TehnoloskeKlase.dll
+C:\Users\User\Desktop\LekarskiPregled (1)\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\bin\Debug\net472\KlasePodataka.pdb
+C:\Users\User\Desktop\LekarskiPregled (1)\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\bin\Debug\net472\TehnoloskeKlase.pdb
+C:\Users\User\Desktop\LekarskiPregled (1)\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\obj\Debug\net472\PoslovnaLogika.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\LekarskiPregled (1)\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\obj\Debug\net472\PoslovnaLogika.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\LekarskiPregled (1)\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\obj\Debug\net472\PoslovnaLogika.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\LekarskiPregled (1)\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\obj\Debug\net472\PoslovnaLogika.AssemblyInfo.cs
+C:\Users\User\Desktop\LekarskiPregled (1)\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\obj\Debug\net472\PoslovnaLogika.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\LekarskiPregled (1)\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\obj\Debug\net472\Poslovna.5AADE7AF.Up2Date
+C:\Users\User\Desktop\LekarskiPregled (1)\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\obj\Debug\net472\PoslovnaLogika.dll
+C:\Users\User\Desktop\LekarskiPregled (1)\LekarskiPregled\2_SlojPoslovneLogike\PoslovnaLogika\obj\Debug\net472\PoslovnaLogika.pdb
