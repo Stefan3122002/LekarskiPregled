@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Pravila>
+
+  <!-- ======= KANDIDAT ======= -->
+  <JMBGDuzina>13</JMBGDuzina>
+  <PorukaJMBG>JMBG mora sadrzati tacno 13 cifara.</PorukaJMBG>
+
+  <MinStarostGodina>14</MinStarostGodina>
+  <PorukaMinStarost>Kandidat mora imati najmanje 14 godina.</PorukaMinStarost>
+
+  <MaxStarostGodina>19</MaxStarostGodina>
+  <PorukaMaxStarost>Starost kandidata ne moze biti veca od 19 godina.</PorukaMaxStarost>
+
+  <!-- ======= LEKARSKI PREGLED ======= -->
+  <MinUstanovaDuzina>3</MinUstanovaDuzina>
+  <PorukaMinUstanova>Naziv zdravstvene ustanove je obavezan i mora imati najmanje 3 karaktera.</PorukaMinUstanova>
+
+  <MinAdresaDuzina>3</MinAdresaDuzina>
+  <PorukaMinAdresa>Adresa ustanove je obavezna i mora imati najmanje 3 karaktera.</PorukaMinAdresa>
+
+  <MinTrajanjeMinuta>5</MinTrajanjeMinuta>
+  <MaxTrajanjeMinuta>180</MaxTrajanjeMinuta>
+  <PorukaTrajanje>Trajanje pregleda mora biti izmedju 5 i 180 minuta.</PorukaTrajanje>
+
+  <MinBrojLekara>1</MinBrojLekara>
+  <MaxBrojLekara>10</MaxBrojLekara>
+  <PorukaBrojLekara>Broj ljekara u komisiji mora biti izmedju 1 i 10.</PorukaBrojLekara>
+
+  <!-- Ako je pregled zavrsen, napomena nije obavezna po difoltu -->
+  <NapomenaObaveznaZaZavrsen>false</NapomenaObaveznaZaZavrsen>
+  <PorukaNapomenaZavrsen>Napomena je obavezna za zavrsen pregled.</PorukaNapomenaZavrsen>
+
+  <!-- ======= PRILOZENI NALAZ ======= -->
+  <MinVrstaNalazaDuzina>3</MinVrstaNalazaDuzina>
+  <PorukaMinVrstaNalaza>Vrsta nalaza je obavezna i mora imati najmanje 3 karaktera.</PorukaMinVrstaNalaza>
+
+  <NapomenaObaveznaZaNeuredan>true</NapomenaObaveznaZaNeuredan>
+  <PorukaNapomenaNeuredan>Napomena je obavezna kada nalaz nije uredan.</PorukaNapomenaNeuredan>
+
+  <!-- =====================================================================
+       POSLOVNO PRAVILO:
+       Spisak obrazovnih profila (po Sifri) koji zahtijevaju dodatne
+       specijalisticke preglede da bi lekarsko uvjerenje kandidata bilo
+       validno. Za svaki profil je naveden spisak potrebnih nalaza - svaki
+       mora biti prilozen i oznacen kao "uredan" (PrilozeniNalaz.Uredan=true).
+       Profili koji se ne nalaze na ovoj listi ne zahtijevaju dodatne
+       preglede - obicno ljekarsko uvjerenje je dovoljno.
+       ===================================================================== -->
+  <ProfiliSaDodatnimPregledima>
+    <Profil>
+      <Sifra>142</Sifra>
+      <Naziv>Elektrotehnicar racunara</Naziv>
+      <PotrebniNalazi>
+        <Nalaz>Pregled oftalmologa</Nalaz>
+        <Nalaz>Pregled otorinolaringologa (ORL)</Nalaz>
+      </PotrebniNalazi>
+    </Profil>
+    <Profil>
+      <Sifra>233</Sifra>
+      <Naziv>Kozmeticki tehnicar</Naziv>
+      <PotrebniNalazi>
+        <Nalaz>Pregled dermatologa</Nalaz>
+      </PotrebniNalazi>
+    </Profil>
+    <Profil>
+      <Sifra>310</Sifra>
+      <Naziv>Vozac motornih vozila</Naziv>
+      <PotrebniNalazi>
+        <Nalaz>Pregled oftalmologa</Nalaz>
+        <Nalaz>Pregled otorinolaringologa (ORL)</Nalaz>
+        <Nalaz>Pregled neuropsihijatra</Nalaz>
+      </PotrebniNalazi>
+    </Profil>
+    <Profil>
+      <Sifra>405</Sifra>
+      <Naziv>Sportski smjer - fudbal</Naziv>
+      <PotrebniNalazi>
+        <Nalaz>Pregled kardiologa</Nalaz>
+        <Nalaz>Pregled ortopeda</Nalaz>
+      </PotrebniNalazi>
+    </Profil>
+  </ProfiliSaDodatnimPregledima>
+
+</Pravila>

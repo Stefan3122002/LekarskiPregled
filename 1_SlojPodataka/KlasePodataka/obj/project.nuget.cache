@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Si616huCbRY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Milos\\Desktop\\LekarskiPregled\\1_SlojPodataka\\KlasePodataka\\KlasePodataka.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Milos\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512"
+  ],
+  "logs": []
+}
